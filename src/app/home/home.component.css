@@ -73,6 +73,7 @@ img {
   z-index: 1;
   max-width: 320px;
 }
+
 .image-wrapper {
   position: relative;
 }
@@ -85,9 +86,19 @@ img {
   z-index: 2; /* Ensure text appears above the image */
   color: white;
   font-size: 60px; /* Adjust the font size as needed */
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1), -1px -1px 0 rgba(0, 0, 0, 1),
+  1px -1px 0 rgba(0, 0, 0, 1), -1px 1px 0 rgba(0, 0, 0, 1);
   font-weight: bold;
   text-align: center;
 }
+
+.overlay-text img {
+  width: 70%; /* Make the image width 50% of the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent any inline spacing around the image */
+  margin: 0 auto; /* Ensure image is centered horizontally */
+}
+
 /* Overlay logo element */
 .overlay-element-logo {
   position: absolute;
@@ -144,4 +155,46 @@ img {
 .clips-container img:hover {
   transform: scale(1.1);
   transform-origin: center;
+}
+
+.vid-container {
+  position: relative;
+  width: 100%;
+  height: 940px;
+  overflow: hidden;
+}
+
+.mobile-image {
+  display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Show the mobile image and text on smaller screens */
+  .mobile-image {
+    display: block; /* Show the mobile image */
+    width: 100%; /* Make sure the mobile image is responsive */
+    height: auto;
+  }
+
+  .overlay-text {
+    display: block; /* Show the overlay text */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Set text color */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  /* Hide other elements inside element-container */
+  .vid-container,
+  .overlay-element-logo,
+  .overlay-text-logo,
+  .img-fluid,
+  .overlay-text img {
+    display: none; /* Hide the non-mobile image */
+  }
 }
