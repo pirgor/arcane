@@ -128,23 +128,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Ensures that images wrap to the next line if needed */
+  flex-wrap: wrap;
   top: 650px;
   left: 20px;
   right: 0;
   bottom: 0;
-  gap: 10px; /* Add space between the images */
 }
 
 .clips-container img {
   max-width: 320px;
-  width: 100%; /* Makes the image flexible but not wider than its max width */
-  height: auto; /* Maintains aspect ratio */
   transition: transform 330ms ease-in-out;
-  object-fit: cover; /* Ensures the image covers its container without distortion */
+  margin-right: 20px;
 }
 
-/* Hover effect for clip images */
 .clips-container img:hover {
   transform: scale(1.1);
   transform-origin: center;
