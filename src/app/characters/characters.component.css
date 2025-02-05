@@ -1,0 +1,19 @@
+.box {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  border-top-style: solid;
+  margin-top: 90px;
+  border-top-width: 0px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  height: auto;  
+  max-width: 100%; 
+}
+
+.box p{
+  text-align: justify;
+}

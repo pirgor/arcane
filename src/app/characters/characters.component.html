@@ -1,0 +1,8 @@
+<div class="box" *ngFor="let character of characters">
+  <img src="{{ character.imgPath }}" alt="{{ character.name }}" />
+  <h1>{{ character.name }}</h1>
+  <h3>({{ character.age }} years old)</h3>
+  <br />
+  <p>{{ character.description }}</p>
+  <br>
+</div>
