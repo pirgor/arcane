@@ -1,42 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 .btn-sign-in {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    text-shadow: none;
-    background: rgb(26, 26, 26);
-    border-radius: 5px;
-    min-width: 100px;
-    border-color: black;
-    text-transform: uppercase;
-  }
-  
-  .btn-sign-in:hover {
-    background-color: gray;
-    color: black;
-  }
-  body {
-    background: rgb(41, 41, 41);
-    color: white;
-    margin-top: 60px;
-    margin: 0 auto;
-  }
-  
-  .bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: rgb(0, 0, 0) !important;
-  }
-  nav, body{
-      font-family: "Montserrat", serif;
-  }
-  
-  .box {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0 auto;
-    display: block;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+  background: rgb(26, 26, 26);
+  border-radius: 5px;
+  min-width: 100px;
+  border-color: black;
+  text-transform: uppercase;
+}
+
+.btn-sign-in:hover {
+  background-color: gray;
+  color: black;
+}
+body {
+  background: rgb(41, 41, 41);
+  color: white;
+  margin-top: 60px;
+  margin: 0 auto;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(0, 0, 0) !important;
+}
+nav,
+body {
+  font-family: "Montserrat", serif;
+}
+
+.box {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
